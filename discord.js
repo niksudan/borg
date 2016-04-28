@@ -18,7 +18,7 @@ discord.on('message', function(user, userID, channelID, message, rawEvent) {
 			console.log(message);
 			var message = '<@' + userID + '>: ' + response;
 			discord.sendMessage({to: channelID, message: message});
-	        console.log('[' + config.name + ' @ ' + channelID + ']: ' + message);
+			console.log('[' + config.name + ' @ ' + channelID + ']: ' + message);
 		});
 	}
 });
