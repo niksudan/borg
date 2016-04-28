@@ -1,6 +1,6 @@
-var borg = require('./src/borg'),
-	SlackBot = require('slackbots'),
-	config = require("./config");
+var borg = require('./src/borg');
+var config = require("./config");
+var SlackBot = require('slackbots');
 
 borg.name = config.name;
 borg.mention = '<@' + config.slack.id + '>';
