@@ -4,6 +4,7 @@
   "description": "A chat bot, or something",
   "main": "src/borg.js",
   "dependencies": {
+    "discord.io": "^1.9.0",
     "slackbots": "^0.5.1",
     "sleep": "^3.0.1"
   },

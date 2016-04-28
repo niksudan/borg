@@ -16,3 +16,4 @@ A chat bot, or something
 ### Services Available
 
 - [Slack](slack.com) - `node slack.js`
+- [Discord](discordapp.com) - `node discord.js`

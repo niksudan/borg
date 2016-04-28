@@ -3,5 +3,9 @@
 	"slack": {
 		"id": "",
 		"token": ""
+	},
+	"discord": {
+		"id": "",
+		"token": ""
 	}
 }
