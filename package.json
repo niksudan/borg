@@ -1,0 +1,21 @@
+{
+  "name": "borg",
+  "version": "1.0.0",
+  "description": "A chat bot, or something",
+  "main": "src/borg.js",
+  "dependencies": {
+    "slackbots": "^0.5.1",
+    "sleep": "^3.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/niksudan/borg.git"
+  },
+  "author": "Nik Sudan <niksudan@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niksudan/borg/issues"
+  },
+  "homepage": "https://github.com/niksudan/borg"
+}
