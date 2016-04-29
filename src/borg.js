@@ -2,7 +2,8 @@ var borg = {
 	name: 'borg',
 	mention: false,
 	responses: [
-		[/\bh(e(y|llo)|i)\b/i, 'social', 'greet']
+		[/\bh(e(y|llo)|i)\b/i, 'social', 'greet'],
+		[/\bflip (a )?coin\b/, 'games', 'coinflip'],
 	],
 	
 	handle: function(message, response)
@@ -19,7 +20,8 @@ var borg = {
 		}
 	},
 	
-	social: require('./social.js')
-}
+	social: require('./social.js'),
+	games: require('./games.js')
+};
 
 module.exports = borg;
