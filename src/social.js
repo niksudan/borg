@@ -12,7 +12,7 @@ module.exports = {
 	pun: function(response, message, regex)
 	{
 		var match = message.match(regex);
-		var topic = match[6] ? match[6] : (match[8] ? match[8] : '').toLowerCase();
+		var topic = match[6] ? match[6] : (match[8] ? match[8] : '');
 		http.get('http://puns.niksudan.com/api/puns/random' + (topic ? '?topic=' + topic : ''), function(res) {
 			var pun = '';
 			res.on('data', function(chunk) {
@@ -21,7 +21,7 @@ module.exports = {
 			res.on('end', function() {
 				pun = JSON.parse(pun);
 				if (pun.error) {
-					response('I couldn\'t think of a ' + topic + ' pun');
+					response('I couldn\'t think of a ' + topic.toLowerCase() + ' pun');
 				} else {
 					if (topic != '') {
 						if (pun.topics.length == 0) {
@@ -30,7 +30,7 @@ module.exports = {
 							topic = pun.topics[0];
 						}
 					}
-					response('Here\'s a ' + topic + ' pun' + '... "' + pun.content + '"');
+					response('Here\'s a ' + topic.toLowerCase() + ' pun' + '... "' + pun.content + '"');
 				}
 			});
 		});
