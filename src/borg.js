@@ -1,6 +1,3 @@
-var http = require('http');
-var sleep = require('sleep');
-
 var borg = {
 	name: 'borg',
 	mention: false,

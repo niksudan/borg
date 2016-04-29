@@ -15,7 +15,6 @@ discord.on('message', function(user, userID, channelID, message, rawEvent) {
     if (userID != config.discord.id) {
 		borg.handle(message, function(response)
 		{
-			console.log(message);
 			var message = '<@' + userID + '>: ' + response;
 			discord.sendMessage({to: channelID, message: message});
 			console.log('[' + config.name + ' @ ' + channelID + ']: ' + message);
