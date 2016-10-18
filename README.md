@@ -1,6 +1,6 @@
 # borg
 
-A chat bot, or something
+Extensible chat bot service for use with Node.js. Configure triggers using regular expressions and specify appropriate callbacks to execute.
 
 ### Requirements
 
